@@ -1,3 +1,34 @@
+body{
+    font-family: arial;
+    font-weight: bold;
+    font-size: 20pt;
+    text-align: center;
+}
+
 .container{
     display: flex;
+}
+
+.red{
+    display: flex;
+    background-color: rgb(248,50,89);
+    justify-content: center;
+    padding: 5%;
+    margin: 2%;
+}
+
+.blue{
+    display: flex;
+    background-color: rgb(99,246,243);
+    justify-content: center;
+    padding: 5%;
+    margin: 2%;
+}
+
+.yellow{
+    display: flex;
+    background-color: rgb(255,255,4);
+    justify-content: center;
+    padding: 5%;
+    margin: 2%;
 }
