@@ -7,28 +7,101 @@ body{
 
 .container{
     display: flex;
+    justify-content: space-around;
+
 }
 
 .red{
     display: flex;
     background-color: rgb(248,50,89);
     justify-content: center;
-    padding: 5%;
-    margin: 2%;
+    align-items: center;
+    padding: 4%;
+    margin: 0.5%;
+    width: 10%;
+    float: left;
+    height: 10vh;
 }
 
 .blue{
     display: flex;
     background-color: rgb(99,246,243);
     justify-content: center;
-    padding: 5%;
-    margin: 2%;
+    align-items: center;
+    padding: 4%;
+    margin: 0.5%;
+    width: 10%;
+    float: left;
+    height: 10vh;
 }
 
 .yellow{
     display: flex;
     background-color: rgb(255,255,4);
     justify-content: center;
-    padding: 5%;
-    margin: 2%;
+    align-items: center;
+    padding: 4%;
+    margin: 0.5%;
+    width: 20%;
+    float: left;
+    height: 35.5vh;
+    order: 10;
 }
+
+@media screen and (max-width: 1600px) {
+    
+    body{
+        background-color:cadetblue;
+    }
+
+    .container{
+        display: flex;
+        
+    }
+
+    .red{
+        width: 41%;
+        float: left;
+        height: 10vh;
+    }
+
+    .blue{
+        float: left;
+        width: 41%;
+        height: 10vh;
+    }
+
+    .yellow{
+        float: left;
+        width: 41%;
+        height: 10vh;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    
+    body{
+        background-color: beige !important;
+    }
+
+    .container{
+        display: flex;
+    }
+
+    .red{
+        width: 91%;
+        
+    }
+
+    .blue{
+        width: 91%;
+    }
+
+    .yellow{
+        width: 91%;
+    }
+
+}
+
