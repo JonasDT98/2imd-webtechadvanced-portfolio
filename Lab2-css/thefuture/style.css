@@ -5,10 +5,14 @@ body{
     text-align: center;
 }
 
+div{
+    margin: 0;
+}
+
 .container{
     display: flex;
-    justify-content: space-around;
-
+    width: 100%;
+    flex-direction: row;
 }
 
 .red{
@@ -19,8 +23,9 @@ body{
     padding: 4%;
     margin: 0.5%;
     width: 10%;
-    float: left;
+    /* float: left; */
     height: 20vh;
+    order: 1;
 }
 
 .blue{
@@ -31,8 +36,9 @@ body{
     padding: 4%;
     margin: 0.5%;
     width: 10%;
-    float: left;
+    /* float: left; */
     height: 80vh;
+    order: 3;
 }
 
 .yellow{
@@ -43,12 +49,17 @@ body{
     padding: 4%;
     margin: 0.5%;
     width: 29%;
-    float: left;
+    /* float: left; */
     height: 42vh;
     order: 10;
 }
 
+.order{
+    display: flex;
+    order: 2;
+}
 
+/* 
 @media screen and (max-width: 1600px) {
     
     body{
@@ -105,4 +116,4 @@ body{
     }
 
 }
-
+ */
