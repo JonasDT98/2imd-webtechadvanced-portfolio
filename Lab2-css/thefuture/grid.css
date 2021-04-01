@@ -72,3 +72,72 @@ p{
 .red-8 {
     grid-area: 3 / 2 / 4 / 3;
 }
+
+@media screen and (max-width: 1600px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 10px 10px;
+        grid-template-areas:
+    "red-1 red-2"
+    "blue red-3"
+    "red-4 yellow"
+    "red-5 red-6"
+    "red-7 red-8";
+    }
+    .red-1 { grid-area: red-1; }
+    .red-2 { grid-area: red-2; }
+    .blue { grid-area: blue; }
+    .red-3 { grid-area: red-3; }
+    .red-4 { grid-area: red-4; }
+    .yellow { grid-area: yellow; }
+    .red-5 { grid-area: red-5; }
+    .red-6 { grid-area: red-6; }
+    .red-7 { grid-area: red-7; }
+    .red-8 { grid-area: red-8; }
+}
+
+@media screen and (max-width: 600px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 10px 10px;
+        grid-template-areas:
+    "red-1"
+    "red-2"
+    "blue"
+    "red-3"
+    "red-4"
+    "yellow"
+    "red-5"
+    "red-6"
+    "red-7"
+    "red-8";
+    }
+
+    .red-1 { grid-area: red-1; }
+
+    .red-2 { grid-area: red-2; }
+
+    .blue { grid-area: blue; }
+
+    .red-3 { grid-area: red-3; }
+
+    .red-4 { grid-area: red-4; }
+
+    .yellow { grid-area: yellow; }
+
+    .red-5 { grid-area: red-5; }
+
+    .red-6 { grid-area: red-6; }
+
+    .red-7 { grid-area: red-7; }
+
+    .red-8 { grid-area: red-8; }
+
+
+}
