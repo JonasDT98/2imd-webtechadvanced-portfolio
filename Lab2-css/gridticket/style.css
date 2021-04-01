@@ -2,4 +2,61 @@ body{
     font-family: sans-serif;
     text-align: center;
     padding-top: 40px;
+
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "header header header qr"
+    "item-1 item-2 item-3 qr"
+    "item-4 item-4 item-4 qr";
+
+    background-image: url("background-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+
+
+.qr {
+    grid-area: qr;
+    border: 1px solid black;
+}
+
+.header {
+    grid-area: header;
+    border-top:  1px solid black;
+    border-bottom:  1px solid black;
+    border-left:  1px solid black;
+}
+
+.item-1 {
+    grid-area: item-1;
+    border-left: 1px solid black;
+}
+
+.item-2 {
+    grid-area: item-2;
+    border-left: 1px solid black;
+}
+
+.item-3 {
+    grid-area: item-3;
+    border-left: 1px solid black;
+}
+
+.item-4 {
+    grid-area: item-4;
+    border-top:  1px solid black;
+    border-bottom:  1px solid black;
+    border-left:  1px solid black;
+}
+
+
