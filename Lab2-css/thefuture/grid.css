@@ -1,0 +1,41 @@
+body{
+    font-family: arial;
+    font-weight: bold;
+    font-size: 20pt;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px 10px;
+}
+
+.red{
+    background-color: rgb(248,50,89);
+    padding: 4%;
+    margin: 0.5%;
+    width: 10%;
+    height: 20vh;
+    /* order: 1; */
+}
+
+.blue{
+    background-color: rgb(99,246,243);
+    padding: 4%;
+    margin: 0.5%;
+    width: 10%;
+    height: 80vh;
+    /* order: 3; */
+}
+
+.yellow{
+    background-color: rgb(255,255,4);
+    padding: 4%;
+    margin: 0.5%;
+    width: 29%;
+    float: left;
+    height: 42vh;
+    /* order: 10; */
+}
