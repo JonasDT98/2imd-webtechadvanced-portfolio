@@ -60,3 +60,46 @@ body{
 }
 
 
+@media screen and (max-width: 800px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+        "header header"
+        "qr qr"
+        "item-1 item-2"
+        "item-3 item-3";
+    }
+
+
+        .header {
+            grid-area: header;
+            border-bottom: 0px;
+            border-right: 1px solid black;
+        }
+
+        .qr {
+            grid-area: qr;
+        }
+
+        .item-1 {
+            grid-area: item-1;
+        }
+
+        .item-2 {
+            grid-area: item-2;
+            border-right: 1px solid black;
+        }
+
+        .item-3 {
+            grid-area: item-3;
+            border: 1px solid black;
+        }
+
+        .item-4{
+            display: none;
+        }
+}
