@@ -2,19 +2,21 @@ class Note {
   constructor(title) {
     this.title = title;
     // HINT🤩 this.element = this.createElement(title);
+    this.element = this.createElement(title);
   }
 
   createElement(title) {
     let newNote = document.createElement("li");
 
     // HINT🤩 newNote.addEventListener('click', this.remove.bind(newNote));
-
+    newNote.addEventListener('click', this.remove.bind(newNote));
     return newNote;
   }
 
   add() {
     // HINT🤩
     // this function should append the note to the screen somehow
+
   }
 
   saveToStorage() {
