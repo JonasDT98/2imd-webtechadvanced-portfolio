@@ -48,7 +48,7 @@ class App {
 
     // HINT🤩
     // pressing the enter key in the text field triggers the createNote function
-    this.txtTodo = document.getElementById("taskList");
+    this.txtTodo = document.getElementById("taskInput");
     this.txtTodo.addEventListener("keypress", this.createNote.bind(this));
     // read up on .bind() -> we need to pass the current meaning of this to the eventListener
     // when the app loads, we can show previously saved noted from localstorage
@@ -66,8 +66,8 @@ class App {
 
     if (noteA != null){
       for (let i = 0; i < noteA.length; i++){
-        let nodeN = new Note(noteA[i]);
-        noteA.add();
+        let noteN = new Note(noteA[i]);
+        noteN.add();
       }
     }
 
@@ -80,8 +80,11 @@ class App {
     // note.saveToStorage();
     // clear the text field with .reset in this class
 
-    if (Event.keyCode === 13) {
-
+    if (e.key === "Enter") {
+      e.preventDefault();
+      let noteN = new Note(this.txtTodo.value);
+      noteN.add();
+      noteN.saveToStorage();
 
     }
   }
