@@ -38,7 +38,8 @@ class Note {
     // in this function, 'this' will refer to the current note element
     // .removeChild(this)
     // remove the item from screen and from localstorage
-
+    document.getElementById("taskList").removeChild(this);
+    
   }
 }
 
