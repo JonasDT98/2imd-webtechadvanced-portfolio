@@ -36,10 +36,14 @@ class Note {
   remove() {
     // HINT🤩 the meaning of 'this' was set by bind() in the createElement function
     // in this function, 'this' will refer to the current note element
-    // .removeChild(this)
     // remove the item from screen and from localstorage
     document.getElementById("taskList").removeChild(this);
-    
+    let note = this.innerHTML;
+
+    let noteA = JSON.parse(localStorage.getItem("noteA"));
+    let index = noteA.indexOf(note);
+    noteA.splice(index, 1);
+    localStorage.setItem("noteA", JSON.stringify(noteA));
   }
 }
 
