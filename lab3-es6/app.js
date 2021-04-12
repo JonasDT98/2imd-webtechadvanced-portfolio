@@ -38,6 +38,7 @@ class Note {
     // in this function, 'this' will refer to the current note element
     // .removeChild(this)
     // remove the item from screen and from localstorage
+
   }
 }
 
@@ -47,11 +48,13 @@ class App {
 
     // HINT🤩
     // pressing the enter key in the text field triggers the createNote function
-    // this.txtTodo = ???
-    // this.txtTodo.addEventListener("keypress", this.createNote.bind(this));
+    this.txtTodo = document.getElementById("taskList");
+    this.txtTodo.addEventListener("keypress", this.createNote.bind(this));
     // read up on .bind() -> we need to pass the current meaning of this to the eventListener
     // when the app loads, we can show previously saved noted from localstorage
-    // this.loadNotesFromStorage();
+    this.loadNotesFromStorage();
+
+
   }
 
   loadNotesFromStorage() {
@@ -65,7 +68,10 @@ class App {
     // note.add();
     // note.saveToStorage();
     // clear the text field with .reset in this class
-    // if (e.key === "Enter") || e.keyCode == 13
+    if (Event.keyCode === 13) {
+      console.log("enter ?");
+
+    }
   }
 
   reset() {
