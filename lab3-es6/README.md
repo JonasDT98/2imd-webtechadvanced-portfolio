@@ -1,7 +1,3 @@
 # 2imd-webtechadvanced-portfolio
 
-[Lab 1](https://github.com/JonasDT98/2imd-webtechadvanced-portfolio/tree/main/lab1-git)
-
-[Lab 2](https://github.com/JonasDT98/2imd-webtechadvanced-portfolio/tree/main/Lab2-css)
-
-[Lab 3](https://github.com/JonasDT98/2imd-webtechadvanced-portfolio/tree/main/lab3-es6)
+[Codesandbox](https://codesandbox.io/s/lab3-todo-app-forked-67lzw?file=/app.js)
