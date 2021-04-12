@@ -64,7 +64,7 @@ class App {
     let noteA = localStorage.getItem("noteA");
     noteA = JSON.parse(noteA);
 
-    if (notA != null){
+    if (noteA != null){
       for (let i = 0; i < noteA.length; i++){
         let nodeN = new Note(noteA[i]);
         noteA.add();
