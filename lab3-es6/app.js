@@ -60,6 +60,17 @@ class App {
   loadNotesFromStorage() {
     // HINT🤩
     // load all notes from storage here and add them to the screen
+
+    let noteA = localStorage.getItem("noteA");
+    noteA = JSON.parse(noteA);
+
+    if (notA != null){
+      for (let i = 0; i < noteA.length; i++){
+        let nodeN = new Note(noteA[i]);
+        noteA.add();
+      }
+    }
+
   }
 
   createNote(e) {
@@ -68,8 +79,9 @@ class App {
     // note.add();
     // note.saveToStorage();
     // clear the text field with .reset in this class
+
     if (Event.keyCode === 13) {
-      console.log("enter ?");
+
 
     }
   }
