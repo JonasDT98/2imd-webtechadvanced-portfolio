@@ -25,9 +25,11 @@ class Note {
     // HINT🤩
     // localStorage only supports strings, not arrays
     // if you want to store arrays, look at JSON.parse and JSON.stringify
-    let noteA = JSON.parse(localStorage.getItem("noteA"));
-    if (noteA == null) noteA = [];
-    noteA.push(this.title);
+
+    let noteA = JSON.parse(localStorage.getItem("noteA")) || [];
+      noteA.push(this.title);
+      localStorage.setItem("noteA", JSON.stringify(noteA));
+
   }
 
 
